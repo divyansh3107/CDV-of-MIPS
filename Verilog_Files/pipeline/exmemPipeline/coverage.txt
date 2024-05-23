@@ -1,0 +1,158 @@
+[2024-05-18 22:52:39 EDT] vlib work && vlog -writetoplevels questa.tops '-timescale' '1ns/1ns' design.sv testbench.sv  && vsim -f questa.tops -batch -do run.do -voptargs=+acc=npr 
+QuestaSim-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 22:52:39 on May 18,2024
+vlog -writetoplevels questa.tops -timescale 1ns/1ns design.sv testbench.sv 
+-- Compiling module exmemPipeline
+-- Compiling package testbench_sv_unit
+** Warning: generator.sv(13): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling interface inf
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 22:52:39 on May 18,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+# vsim tb -batch -do "run.do" -voptargs="+acc=npr" 
+# Start time: 22:52:39 on May 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: generator.sv(13): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.3 linux_x86_64 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.inf(fast__2)
+# Loading work.exmemPipeline(fast)
+# Loading work.inf(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: testbench.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'EXwritedata'. The port definition is at: design.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: testbench.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXmemWrite'. The port definition is at: design.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: testbench.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'MEMwritedata'. The port definition is at: design.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: testbench.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'MEMwriteReg'. The port definition is at: design.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/dut File: testbench.sv Line: 16
+# ** Warning: (vsim-3722) testbench.sv(16): [TFMPC] - Missing connection for port 'clk'.
+# 
+# do run.do
+# T=0 [Driver] starting ...
+# T=0 [Driver] waiting for item ...
+# T=0 [Monitor] starting ...
+# ** Warning: (vsim-3881) transaction.sv(23): Sign-and-Width conversion applied in bin 'v3' for Coverpoint 'EXwR'. Value '32' changed to '31 (maximum)' value.
+#    Time: 0 ps  Iteration: 0  Region: /testbench_sv_unit::environment::run
+# ** Warning: (vsim-3882) transaction.sv(23): Out of bounds value range in bin 'v3' for Coverpoint 'EXwR' converted to nearest valid bounded range of [16:31].
+#    Time: 0 ps  Iteration: 0  Region: /testbench_sv_unit::environment::run
+# ** Warning: (vsim-3881) transaction.sv(36): Sign-and-Width conversion applied in bin 'v3' for Coverpoint 'MEMwR'. Value '32' changed to '31 (maximum)' value.
+#    Time: 0 ps  Iteration: 0  Region: /testbench_sv_unit::environment::run
+# ** Warning: (vsim-3882) transaction.sv(36): Out of bounds value range in bin 'v3' for Coverpoint 'MEMwR' converted to nearest valid bounded range of [16:31].
+#    Time: 0 ps  Iteration: 0  Region: /testbench_sv_unit::environment::run
+# T=0 [Generator] Loop:1/15 create next item
+# T=0 [Generator] Wait for driver to be done
+# T=10000 [Driver] waiting for item ...
+# T=10000 [Generator] Loop:2/15 create next item
+# T=10000 [Generator] Wait for driver to be done
+# T=15000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=15000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=30000 [Driver] waiting for item ...
+# T=30000 [Generator] Loop:3/15 create next item
+# T=30000 [Generator] Wait for driver to be done
+# T=35000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=35000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=50000 [Driver] waiting for item ...
+# T=50000 [Generator] Loop:4/15 create next item
+# T=50000 [Generator] Wait for driver to be done
+# T=55000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=55000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=70000 [Driver] waiting for item ...
+# T=70000 [Generator] Loop:5/15 create next item
+# T=70000 [Generator] Wait for driver to be done
+# T=75000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=75000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=90000 [Driver] waiting for item ...
+# T=90000 [Generator] Loop:6/15 create next item
+# T=90000 [Generator] Wait for driver to be done
+# T=95000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=95000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=110000 [Driver] waiting for item ...
+# T=110000 [Generator] Loop:7/15 create next item
+# T=110000 [Generator] Wait for driver to be done
+# T=115000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=115000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=130000 [Driver] waiting for item ...
+# T=130000 [Generator] Loop:8/15 create next item
+# T=130000 [Generator] Wait for driver to be done
+# T=135000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=135000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=150000 [Driver] waiting for item ...
+# T=150000 [Generator] Loop:9/15 create next item
+# T=150000 [Generator] Wait for driver to be done
+# T=155000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=155000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=170000 [Driver] waiting for item ...
+# T=170000 [Generator] Loop:10/15 create next item
+# T=170000 [Generator] Wait for driver to be done
+# T=175000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=175000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=190000 [Driver] waiting for item ...
+# T=190000 [Generator] Loop:11/15 create next item
+# T=190000 [Generator] Wait for driver to be done
+# T=195000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=195000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=210000 [Driver] waiting for item ...
+# T=210000 [Generator] Loop:12/15 create next item
+# T=210000 [Generator] Wait for driver to be done
+# T=215000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=215000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=230000 [Driver] waiting for item ...
+# T=230000 [Generator] Loop:13/15 create next item
+# T=230000 [Generator] Wait for driver to be done
+# T=235000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=235000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=250000 [Driver] waiting for item ...
+# T=250000 [Generator] Loop:14/15 create next item
+# T=250000 [Generator] Wait for driver to be done
+# T=255000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=255000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=270000 [Driver] waiting for item ...
+# T=270000 [Generator] Loop:15/15 create next item
+# T=270000 [Generator] Wait for driver to be done
+# T=275000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=275000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=290000 [Driver] waiting for item ...
+# Overall Coverage of expipe Module = 87.500000
+# coverage of covergroup = 87.500000
+# coverage of coverpoint EXaluOut = 100.000000
+# coverage of coverpoint EXwritedata = 100.000000
+# coverage of coverpoint EXwriteReg = 100.000000
+# coverage of coverpoint EXregWrite = 100.000000
+# coverage of coverpoint EXmemtoReg = 100.000000
+# coverage of coverpoint EXmemWrite = 100.000000
+# Overall Coverage of mempipe Module = 87.500000
+# coverage of covergroup = 87.500000
+# coverage of coverpoint MEMaluOut = 100.000000
+# coverage of coverpoint MEMwritedata = 100.000000
+# coverage of coverpoint MEMwriteReg = 100.000000
+# coverage of coverpoint MEMregWrite = 50.000000
+# coverage of coverpoint MEMmemtoReg = 50.000000
+# coverage of coverpoint MEMmemWrite = 50.000000
+# T=295000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# T=295000 EXregWrite=0x0 EXmemtoReg=0x0 EXmemWrite=0x0 MEMregWrite=0x0 MEMmemtoReg=0x0 MEMmemWrite=0x0
+# ** Note: $finish    : testbench.sv(26)
+#    Time: 310 ns  Iteration: 0  Instance: /tb
+# End time: 22:52:40 on May 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 11

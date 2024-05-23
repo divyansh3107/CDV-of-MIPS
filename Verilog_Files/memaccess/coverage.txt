@@ -1,0 +1,129 @@
+[2024-05-18 18:02:22 EDT] vlib work && vlog -writetoplevels questa.tops '-timescale' '1ns/1ns' design.sv testbench.sv  && vsim -f questa.tops -batch -do run.do -voptargs=+acc=npr 
+QuestaSim-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 18:02:23 on May 18,2024
+vlog -writetoplevels questa.tops -timescale 1ns/1ns design.sv testbench.sv 
+-- Compiling module memaccess
+-- Compiling package testbench_sv_unit
+** Warning: generator.sv(13): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling interface inf
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 18:02:23 on May 18,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+# vsim tb -batch -do "run.do" -voptargs="+acc=npr" 
+# Start time: 18:02:23 on May 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: generator.sv(13): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.3 linux_x86_64 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.inf(fast__2)
+# Loading work.memaccess(fast)
+# Loading work.inf(fast)
+# 
+# do run.do
+# T=0 [Driver] starting ...
+# T=0 [Driver] waiting for item ...
+# T=0 [Monitor] starting ...
+# T=0 [Generator] Loop:1/15 create next item
+# T=0 [Generator] Wait for driver to be done
+# T=10000 [Driver] waiting for item ...
+# T=10000 [Generator] Loop:2/15 create next item
+# T=10000 [Generator] Wait for driver to be done
+# T=15000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=15000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=30000 [Driver] waiting for item ...
+# T=30000 [Generator] Loop:3/15 create next item
+# T=30000 [Generator] Wait for driver to be done
+# T=35000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=35000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=50000 [Driver] waiting for item ...
+# T=50000 [Generator] Loop:4/15 create next item
+# T=50000 [Generator] Wait for driver to be done
+# T=55000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=55000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=70000 [Driver] waiting for item ...
+# T=70000 [Generator] Loop:5/15 create next item
+# T=70000 [Generator] Wait for driver to be done
+# T=75000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=75000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=90000 [Driver] waiting for item ...
+# T=90000 [Generator] Loop:6/15 create next item
+# T=90000 [Generator] Wait for driver to be done
+# T=95000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=95000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=110000 [Driver] waiting for item ...
+# T=110000 [Generator] Loop:7/15 create next item
+# T=110000 [Generator] Wait for driver to be done
+# T=115000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=115000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=130000 [Driver] waiting for item ...
+# T=130000 [Generator] Loop:8/15 create next item
+# T=130000 [Generator] Wait for driver to be done
+# T=135000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=135000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=150000 [Driver] waiting for item ...
+# T=150000 [Generator] Loop:9/15 create next item
+# T=150000 [Generator] Wait for driver to be done
+# T=155000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=155000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=170000 [Driver] waiting for item ...
+# T=170000 [Generator] Loop:10/15 create next item
+# T=170000 [Generator] Wait for driver to be done
+# T=175000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=175000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=190000 [Driver] waiting for item ...
+# T=190000 [Generator] Loop:11/15 create next item
+# T=190000 [Generator] Wait for driver to be done
+# T=195000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=195000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=210000 [Driver] waiting for item ...
+# T=210000 [Generator] Loop:12/15 create next item
+# T=210000 [Generator] Wait for driver to be done
+# T=215000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=215000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=230000 [Driver] waiting for item ...
+# T=230000 [Generator] Loop:13/15 create next item
+# T=230000 [Generator] Wait for driver to be done
+# T=235000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=235000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=250000 [Driver] waiting for item ...
+# T=250000 [Generator] Loop:14/15 create next item
+# T=250000 [Generator] Wait for driver to be done
+# T=255000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=255000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=270000 [Driver] waiting for item ...
+# T=270000 [Generator] Loop:15/15 create next item
+# T=270000 [Generator] Wait for driver to be done
+# T=275000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=275000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=290000 [Driver] waiting for item ...
+# Overall Coverage of memaccess Module = 68.750000
+# coverage of covergroup = 68.750000
+# coverage of coverpoint c = 100.000000
+# coverage of coverpoint execute = 100.000000
+# coverage of coverpoint d = 25.000000
+# coverage of coverpoint memaccess = 50.000000
+# T=295000 Monitor c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# T=295000 Scoreboard c=0x0 execute=0x0 d=0x0 memaccess=0x0
+# ** Note: $finish    : testbench.sv(25)
+#    Time: 310 ns  Iteration: 0  Instance: /tb
+# End time: 18:02:24 on May 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

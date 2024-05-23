@@ -1,0 +1,204 @@
+$date
+	Thu May 18 22:50:37 2023
+$end
+$version
+	QuestaSim Version 2021.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb $end
+$var reg 1 ! clk $end
+$var reg 32 " EXaluOut [31:0] $end
+$var reg 32 # EXwritedata [31:0] $end
+$var reg 5 $ EXwriteReg [4:0] $end
+$var reg 1 % EXregWrite $end
+$var reg 1 & EXmemtoReg $end
+$var reg 1 ' EXmemWrite $end
+$var reg 5 ( MEMwriteReg [4:0] $end
+$var reg 32 ) MEMaluOut [31:0] $end
+$var reg 32 * MEMwritedata [31:0] $end
+$var reg 1 + MEMregWrite $end
+$var reg 1 , MEMmemtoReg $end
+$var reg 1 - MEMmemWrite $end
+$var wire 1 . Exwritedata $end
+
+$scope module dut $end
+$var wire 1 / EXaluOut [31] $end
+$var wire 1 0 EXaluOut [30] $end
+$var wire 1 1 EXaluOut [29] $end
+$var wire 1 2 EXaluOut [28] $end
+$var wire 1 3 EXaluOut [27] $end
+$var wire 1 4 EXaluOut [26] $end
+$var wire 1 5 EXaluOut [25] $end
+$var wire 1 6 EXaluOut [24] $end
+$var wire 1 7 EXaluOut [23] $end
+$var wire 1 8 EXaluOut [22] $end
+$var wire 1 9 EXaluOut [21] $end
+$var wire 1 : EXaluOut [20] $end
+$var wire 1 ; EXaluOut [19] $end
+$var wire 1 < EXaluOut [18] $end
+$var wire 1 = EXaluOut [17] $end
+$var wire 1 > EXaluOut [16] $end
+$var wire 1 ? EXaluOut [15] $end
+$var wire 1 @ EXaluOut [14] $end
+$var wire 1 A EXaluOut [13] $end
+$var wire 1 B EXaluOut [12] $end
+$var wire 1 C EXaluOut [11] $end
+$var wire 1 D EXaluOut [10] $end
+$var wire 1 E EXaluOut [9] $end
+$var wire 1 F EXaluOut [8] $end
+$var wire 1 G EXaluOut [7] $end
+$var wire 1 H EXaluOut [6] $end
+$var wire 1 I EXaluOut [5] $end
+$var wire 1 J EXaluOut [4] $end
+$var wire 1 K EXaluOut [3] $end
+$var wire 1 L EXaluOut [2] $end
+$var wire 1 M EXaluOut [1] $end
+$var wire 1 N EXaluOut [0] $end
+$var wire 1 O EXwritedata [31] $end
+$var wire 1 P EXwritedata [30] $end
+$var wire 1 Q EXwritedata [29] $end
+$var wire 1 R EXwritedata [28] $end
+$var wire 1 S EXwritedata [27] $end
+$var wire 1 T EXwritedata [26] $end
+$var wire 1 U EXwritedata [25] $end
+$var wire 1 V EXwritedata [24] $end
+$var wire 1 W EXwritedata [23] $end
+$var wire 1 X EXwritedata [22] $end
+$var wire 1 Y EXwritedata [21] $end
+$var wire 1 Z EXwritedata [20] $end
+$var wire 1 [ EXwritedata [19] $end
+$var wire 1 \ EXwritedata [18] $end
+$var wire 1 ] EXwritedata [17] $end
+$var wire 1 ^ EXwritedata [16] $end
+$var wire 1 _ EXwritedata [15] $end
+$var wire 1 ` EXwritedata [14] $end
+$var wire 1 a EXwritedata [13] $end
+$var wire 1 b EXwritedata [12] $end
+$var wire 1 c EXwritedata [11] $end
+$var wire 1 d EXwritedata [10] $end
+$var wire 1 e EXwritedata [9] $end
+$var wire 1 f EXwritedata [8] $end
+$var wire 1 g EXwritedata [7] $end
+$var wire 1 h EXwritedata [6] $end
+$var wire 1 i EXwritedata [5] $end
+$var wire 1 j EXwritedata [4] $end
+$var wire 1 k EXwritedata [3] $end
+$var wire 1 l EXwritedata [2] $end
+$var wire 1 m EXwritedata [1] $end
+$var wire 1 . EXwritedata [0] $end
+$var wire 1 n EXwriteReg [4] $end
+$var wire 1 o EXwriteReg [3] $end
+$var wire 1 p EXwriteReg [2] $end
+$var wire 1 q EXwriteReg [1] $end
+$var wire 1 r EXwriteReg [0] $end
+$var wire 1 s clk $end
+$var wire 1 t EXregWrite $end
+$var wire 1 u EXmemtoReg $end
+$var wire 1 v EXmemWrite $end
+$var reg 5 w MEMwriteReg [4:0] $end
+$var reg 32 x MEMaluOut [31:0] $end
+$var reg 32 y MEMwritedata [31:0] $end
+$var reg 1 z MEMregWrite $end
+$var reg 1 { MEMmemtoReg $end
+$var reg 1 | MEMmemWrite $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#290000
+$dumpvars
+x!
+bx "
+bx #
+bx $
+x%
+x&
+x'
+bx (
+bx )
+bx *
+x+
+x,
+x-
+bx w
+bx x
+bx y
+xz
+x{
+x|
+z.
+xv
+xu
+xt
+xr
+xq
+xp
+xo
+xn
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+zm
+zl
+zk
+zj
+zi
+zh
+zg
+zf
+ze
+zd
+zc
+zb
+za
+z`
+z_
+z^
+z]
+z\
+z[
+zZ
+zY
+zX
+zW
+zV
+zU
+zT
+zS
+zR
+zQ
+zP
+zO
+zs
+$end

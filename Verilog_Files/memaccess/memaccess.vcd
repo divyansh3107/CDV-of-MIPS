@@ -1,0 +1,41 @@
+$date
+	Thu May 18 17:29:35 2023
+$end
+$version
+	QuestaSim Version 2021.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb $end
+$var reg 1 ! clk $end
+$var reg 1 " execute $end
+$var reg 2 # c [1:0] $end
+$var reg 1 $ memaccess $end
+$var reg 2 % d [1:0] $end
+
+$scope module dut $end
+$var wire 1 & clk $end
+$var wire 1 ' execute $end
+$var wire 1 ( c [1] $end
+$var wire 1 ) c [0] $end
+$var reg 1 * memaccess $end
+$var reg 2 + d [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#290000
+$dumpvars
+x!
+x"
+bx #
+x$
+b0 %
+x*
+b0 +
+x)
+x(
+x&
+x'
+$end

@@ -1,0 +1,119 @@
+[2024-05-18 18:04:21 EDT] vlib work && vlog -writetoplevels questa.tops '-timescale' '1ns/1ns' design.sv testbench.sv  && vsim -f questa.tops -batch -do run.do -voptargs=+acc=npr 
+QuestaSim-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 18:04:22 on May 18,2024
+vlog -writetoplevels questa.tops -timescale 1ns/1ns design.sv testbench.sv 
+-- Compiling module registerFile
+-- Compiling package testbench_sv_unit
+** Warning: generator.sv(13): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling interface inf
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 18:04:22 on May 18,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+# vsim tb -batch -do "run.do" -voptargs="+acc=npr" 
+# Start time: 18:04:22 on May 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: generator.sv(13): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.3 linux_x86_64 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.inf(fast__2)
+# Loading work.registerFile(fast)
+# Loading work.inf(fast)
+# 
+# do run.do
+# T=0 [Driver] starting ...
+# T=0 [Driver] waiting for item ...
+# T=0 [Monitor] starting ...
+# WBregWrite=0 idRs=9 idRt=1 WbwriteReg=1c WBresult=79c66f9 idregA=0 idregB=0
+# T=10000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=17 idRt=c WbwriteReg=1a WBresult=fe8b7fe1 idregA=0 idregB=0
+# T=20000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=f idRt=17 WbwriteReg=2 WBresult=fb3a7f8 idregA=0 idregB=0
+# T=30000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=1 idRt=3 WbwriteReg=1a WBresult=11e23b49 idregA=0 idregB=0
+# T=40000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=14 idRt=0 WbwriteReg=1b WBresult=7bf0d8a9 idregA=0 idregB=0
+# T=50000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=3 idRt=18 WbwriteReg=5 WBresult=fed82369 idregA=0 idregB=0
+# T=60000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=1b idRt=1 WbwriteReg=8 WBresult=661eefb8 idregA=0 idregB=0
+# T=70000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=13 idRt=13 WbwriteReg=8 WBresult=8934bbef idregA=0 idregB=0
+# T=80000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=1e idRt=1a WbwriteReg=1d WBresult=96384e62 idregA=0 idregB=0
+# T=90000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=13 idRt=1b WbwriteReg=11 WBresult=ff81b4a6 idregA=0 idregB=0
+# T=100000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=12 idRt=18 WbwriteReg=0 WBresult=fc373ed0 idregA=0 idregB=0
+# T=110000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=1f idRt=3 WbwriteReg=f WBresult=b2a18cc8 idregA=0 idregB=0
+# T=120000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=1c idRt=f WbwriteReg=14 WBresult=c2b85d52 idregA=0 idregB=0
+# T=130000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=8 idRt=14 WbwriteReg=12 WBresult=feb1eacd idregA=0 idregB=0
+# T=140000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=1 idRs=13 idRt=2 WbwriteReg=c WBresult=bb7f2c0d idregA=0 idregB=0
+# T=150000 [Driver] waiting for item ...
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# Overall Coverage of ControlUnit Module = 100.000000
+# coverage of covergroup = 100.000000
+# coverage of coverpoint WBregWrite = 100.000000
+# coverage of coverpoint idRs = 100.000000
+# coverage of coverpoint idRt = 100.000000
+# coverage of coverpoint WBwriteReg = 100.000000
+# coverage of coverpoint WBresult = 100.000000
+# coverage of coverpoint idregA = 100.000000
+# coverage of coverpoint idregB = 100.000000
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# WBregWrite=0 idRs=0 idRt=0 WbwriteReg=0 WBresult=0 idregA=0 idregB=0
+# ** Note: $finish    : testbench.sv(34)
+#    Time: 170 ns  Iteration: 0  Instance: /tb
+# End time: 18:04:23 on May 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
